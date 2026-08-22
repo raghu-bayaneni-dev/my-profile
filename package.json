@@ -1,0 +1,23 @@
+{
+  "name": "my-profile-site",
+  "version": "1.0.0",
+  "description": "Clean, modern, responsive multi-page static profile and portfolio website.",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve . -l 3000",
+    "dev": "serve . -l 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "profile",
+    "static-site",
+    "html5",
+    "css3",
+    "vanilla-js"
+  ],
+  "author": "Raghu Bayaneni",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

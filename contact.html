@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+  ==============================================================================
+  My Profile Site - Direct Contact Channels (contact.html)
+  ==============================================================================
+  Purpose:
+    Direct contact and communication hub presenting Raghu Bayaneni's verified
+    email, direct phone, LinkedIn profile, SF Bay Area location, and direct
+    resume PDF download access.
+
+  Constitution Compliance:
+    - Principle I: Clean, readable, and well-documented semantic markup.
+    - Principle II: Pure static HTML5, CSS3, and Vanilla JS.
+    - Principle III: Modern, responsive light theme layout.
+    - Principle IV: Zero automated test overhead; manual verification only.
+  ==============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Connect | Raghu Bayaneni - Lead Staff Engineer</title>
+  <meta name="description" content="Connect directly with Raghu Bayaneni for AI engineering leadership, forward-deployed architecture, or advisory collaborations.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Persistent Site Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Raghu Bayaneni Home">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Raghu Bayaneni</span>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Main Navigation Links -->
+      <nav class="site-nav" id="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">About</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Page Content -->
+  <main id="main-content" class="page-content">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <header class="section-header">
+        <h1 class="section-title">Get in Touch &amp; Connect</h1>
+        <p class="section-subtitle">
+          Whether you are looking for executive technical leadership in Generative AI, enterprise agentic systems architecture, or forward-deployed collaborations, reach out directly through any channel below.
+        </p>
+      </header>
+
+      <!-- Section Body: Contact Cards Grid -->
+      <div class="section-body">
+        <div class="contact-grid">
+
+          <!-- Email Channel -->
+          <a href="mailto:raghu.bayaneni@gmail.com" class="card contact-card" aria-label="Send direct email to raghu.bayaneni@gmail.com">
+            <div class="contact-icon-box" aria-hidden="true">
+              ✉️
+            </div>
+            <div class="contact-card-content">
+              <div class="contact-channel-title">Direct Email</div>
+              <div class="contact-channel-value">raghu.bayaneni@gmail.com</div>
+              <div class="contact-channel-desc">Primary channel for technical inquiries, advisory, and leadership roles</div>
+            </div>
+          </a>
+
+          <!-- Phone Channel -->
+          <a href="tel:+12095978323" class="card contact-card" aria-label="Call (209) 597 8323">
+            <div class="contact-icon-box" aria-hidden="true">
+              📞
+            </div>
+            <div class="contact-card-content">
+              <div class="contact-channel-title">Direct Phone</div>
+              <div class="contact-channel-value">(209) 597 8323</div>
+              <div class="contact-channel-desc">Available for direct conversations, interviews &amp; voice calls</div>
+            </div>
+          </a>
+
+          <!-- LinkedIn Channel -->
+          <a href="https://www.linkedin.com/in/raghuramz" target="_blank" rel="noopener noreferrer" class="card contact-card" aria-label="Open Raghu Bayaneni LinkedIn profile">
+            <div class="contact-icon-box" aria-hidden="true">
+              💼
+            </div>
+            <div class="contact-card-content">
+              <div class="contact-channel-title">LinkedIn Profile</div>
+              <div class="contact-channel-value">linkedin.com/in/raghuramz</div>
+              <div class="contact-channel-desc">Professional network, recommendations &amp; career updates</div>
+            </div>
+          </a>
+
+          <!-- Resume PDF Download Card -->
+          <a href="resources/resume.pdf" target="_blank" rel="noopener noreferrer" class="card contact-card" style="border-color: var(--accent-border); background-color: var(--accent-subtle);" aria-label="View or download printable PDF resume">
+            <div class="contact-icon-box" style="background-color: #ffffff;" aria-hidden="true">
+              📄
+            </div>
+            <div class="contact-card-content">
+              <div class="contact-channel-title">Curriculum Vitae / Resume</div>
+              <div class="contact-channel-value">Download Printable Resume (PDF) &rarr;</div>
+              <div class="contact-channel-desc">Official PDF document hosted in resources/resume.pdf</div>
+            </div>
+          </a>
+
+          <!-- Location & Timezone -->
+          <div class="card contact-card" style="grid-column: 1 / -1;">
+            <div class="contact-icon-box" aria-hidden="true">
+              📍
+            </div>
+            <div class="contact-card-content">
+              <div class="contact-channel-title">Location &amp; Work Availability</div>
+              <div class="contact-channel-value" style="color: var(--text-primary);">San Francisco - Bay Area, California</div>
+              <div class="contact-channel-desc">Pacific Time Zone (UTC-7 / UTC-8) • Available for Bay Area onsite, hybrid, and remote leadership roles globally.</div>
+            </div>
+          </div>
+
+          <!-- Note / Message Banner -->
+          <div class="card contact-note-card">
+            <h3>⚡ Communication &amp; Response Time</h3>
+            <p>
+              I actively monitor communications and aim to respond to all inquiries within 24 business hours. Looking forward to discussing how we can deliver impactful engineering results together.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Consistent Site Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <p class="copyright">&copy; 2026 Raghu Bayaneni. All rights reserved.</p>
+        <p class="footer-tagline">Lead Staff Engineer | Full-Stack, AI &amp; Forward Deployed Systems.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/raghuramz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+        <a href="resources/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download Resume PDF">Resume (PDF)</a>
+        <a href="contact.html">Contact</a>
+        <a href="#top" id="back-to-top" class="back-to-top" aria-label="Scroll back to top">↑ Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Interactivity Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--
+  ==============================================================================
+  My Profile Site - Projects Showcase (projects.html)
+  ==============================================================================
+  Purpose:
+    Portfolio projects showcase presenting Raghu Bayaneni's key engineering
+    achievements across Generative AI, autonomous agent runtimes, RAG pipelines,
+    LLM cost routing, and high-scale enterprise platforms.
+
+  Constitution Compliance:
+    - Principle I: Clean, readable, and well-documented semantic markup.
+    - Principle II: Pure static HTML5, CSS3, and Vanilla JS.
+    - Principle III: Modern, responsive light theme layout.
+    - Principle IV: Zero automated test overhead; manual verification only.
+  ==============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured AI &amp; Software Projects | Raghu Bayaneni - Lead Staff Engineer</title>
+  <meta name="description" content="Explore featured Generative AI systems, Agentforce orchestration runtimes, production RAG pipelines, and enterprise architectures built by Raghu Bayaneni.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Persistent Site Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Raghu Bayaneni Home">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Raghu Bayaneni</span>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Main Navigation Links -->
+      <nav class="site-nav" id="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">About</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="projects.html" class="nav-link active" aria-current="page">Projects</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Page Content -->
+  <main id="main-content" class="page-content">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <header class="section-header">
+        <h1 class="section-title">Featured Systems &amp; AI Architectures</h1>
+        <p class="section-subtitle">
+          A showcase of production-grade Generative AI gateways, autonomous agentic runtimes, streaming RAG pipelines, and high-throughput enterprise platforms.
+        </p>
+      </header>
+
+      <!-- Section Body: Projects Grid -->
+      <div class="section-body">
+        <div class="grid grid-3">
+
+          <!-- Project 1: Agentforce Gateway -->
+          <article class="card project-card">
+            <div>
+              <div class="project-preview" aria-hidden="true">
+                🤖
+              </div>
+              <h2 class="project-title">Agentforce &amp; Einstein AI Gateway</h2>
+              <div class="project-tagline">Multi-Agent Autonomous Runtime &amp; Tool Orchestration</div>
+              <p class="project-description">
+                Core orchestration gateway bridging enterprise web platforms with foundational LLMs (GPT, Claude, Gemini, Llama). Features multi-step planning, state management, tool execution, and context-window optimization.
+              </p>
+            </div>
+            <div class="project-meta">
+              <div class="tag-list">
+                <span class="tag tag-accent">Agentforce</span>
+                <span class="tag tag-accent">LangGraph / CrewAI</span>
+                <span class="tag tag-accent">Python</span>
+                <span class="tag">MCP</span>
+                <span class="tag">Node.js</span>
+              </div>
+              <div class="project-actions">
+                <a href="experience.html" class="btn btn-primary btn-sm">Learn in Experience &rarr;</a>
+                <a href="resources/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Resume Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Enterprise RAG Pipeline -->
+          <article class="card project-card">
+            <div>
+              <div class="project-preview" aria-hidden="true">
+                ⚡
+              </div>
+              <h2 class="project-title">Enterprise RAG &amp; Vector Pipeline</h2>
+              <div class="project-tagline">Streaming Vectorized Context &amp; Hallucination Elimination</div>
+              <p class="project-description">
+                End-to-end Retrieval-Augmented Generation pipeline integrating real-time streaming data from Data Cloud and MuleSoft into Pinecone and ChromaDB vector stores with deterministic grounding and tenant security boundaries.
+              </p>
+            </div>
+            <div class="project-meta">
+              <div class="tag-list">
+                <span class="tag tag-accent">RAG</span>
+                <span class="tag tag-accent">Pinecone</span>
+                <span class="tag tag-accent">ChromaDB</span>
+                <span class="tag">Data Cloud</span>
+                <span class="tag">MuleSoft</span>
+                <span class="tag">FAISS</span>
+              </div>
+              <div class="project-actions">
+                <a href="experience.html" class="btn btn-primary btn-sm">Learn in Experience &rarr;</a>
+                <a href="resources/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Resume Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: LLM Cost-Router -->
+          <article class="card project-card">
+            <div>
+              <div class="project-preview" aria-hidden="true">
+                🎯
+              </div>
+              <h2 class="project-title">LLM Cost-Router &amp; SLM Dispatcher</h2>
+              <div class="project-tagline">Intelligent Model Routing &amp; PEFT Fine-Tuning</div>
+              <p class="project-description">
+                Intelligent model routing middleware that evaluates query complexity to dynamically dispatch tasks between fine-tuned Small Language Models (SLMs via LoRA/QLoRA) and frontier models, drastically reducing enterprise token costs.
+              </p>
+            </div>
+            <div class="project-meta">
+              <div class="tag-list">
+                <span class="tag tag-accent">SLM Routing</span>
+                <span class="tag tag-accent">LoRA / QLoRA</span>
+                <span class="tag tag-accent">PEFT</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Python</span>
+              </div>
+              <div class="project-actions">
+                <a href="skills.html" class="btn btn-primary btn-sm">View AI Skills &rarr;</a>
+                <a href="resources/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Resume Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: ADK AI Observability & Evaluation -->
+          <article class="card project-card">
+            <div>
+              <div class="project-preview" aria-hidden="true">
+                🛡️
+              </div>
+              <h2 class="project-title">AI Observability &amp; Guardrails Suite</h2>
+              <div class="project-tagline">Deterministic Evaluation, TDD &amp; Security Shield</div>
+              <p class="project-description">
+                Production-grade evaluation and testing harness incorporating LangSmith, Phoenix (Arize), Ragas, DeepEval, and Guardrails AI to quantify groundedness, eliminate jailbreaks, and enforce strict enterprise compliance.
+              </p>
+            </div>
+            <div class="project-meta">
+              <div class="tag-list">
+                <span class="tag tag-accent">LangSmith</span>
+                <span class="tag tag-accent">Phoenix</span>
+                <span class="tag tag-accent">Ragas</span>
+                <span class="tag">LlamaGuard</span>
+                <span class="tag">Guardrails AI</span>
+              </div>
+              <div class="project-actions">
+                <a href="skills.html" class="btn btn-primary btn-sm">View AI Skills &rarr;</a>
+                <a href="resources/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Resume Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Yahoo APT Ad-Tech Platform -->
+          <article class="card project-card">
+            <div>
+              <div class="project-preview" aria-hidden="true">
+                🌐
+              </div>
+              <h2 class="project-title">Yahoo! APT Global Ad Platform</h2>
+              <div class="project-tagline">High-Throughput Publisher &amp; Advertiser Network</div>
+              <p class="project-description">
+                Engineered core software components and high-performance UI frameworks for APT from Yahoo, supporting global digital advertising delivery with massive concurrency and automated CI/CD deployment pipelines.
+              </p>
+            </div>
+            <div class="project-meta">
+              <div class="tag-list">
+                <span class="tag tag-accent">JavaScript</span>
+                <span class="tag tag-accent">Java</span>
+                <span class="tag">High-Traffic Web</span>
+                <span class="tag">Ad-Tech</span>
+                <span class="tag">CI/CD</span>
+              </div>
+              <div class="project-actions">
+                <a href="experience.html" class="btn btn-primary btn-sm">Learn in Experience &rarr;</a>
+                <a href="resources/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Resume Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: BlackRock Financial Portal -->
+          <article class="card project-card">
+            <div>
+              <div class="project-preview" aria-hidden="true">
+                📊
+              </div>
+              <h2 class="project-title">Financial Portfolio Management Portal</h2>
+              <div class="project-tagline">Mission-Critical Financial SPAs &amp; Modern Architecture</div>
+              <p class="project-description">
+                Engineered high-security financial SPAs and robust REST APIs at BlackRock, modernizing legacy reporting infrastructure and delivering responsive, real-time analytics to institutional portfolio managers.
+              </p>
+            </div>
+            <div class="project-meta">
+              <div class="tag-list">
+                <span class="tag tag-accent">Java</span>
+                <span class="tag tag-accent">JavaScript (ES6+)</span>
+                <span class="tag">Financial SPAs</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">Security</span>
+              </div>
+              <div class="project-actions">
+                <a href="experience.html" class="btn btn-primary btn-sm">Learn in Experience &rarr;</a>
+                <a href="resources/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Resume Details</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Consistent Site Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <p class="copyright">&copy; 2026 Raghu Bayaneni. All rights reserved.</p>
+        <p class="footer-tagline">Lead Staff Engineer | Full-Stack, AI &amp; Forward Deployed Systems.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/raghuramz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+        <a href="resources/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download Resume PDF">Resume (PDF)</a>
+        <a href="contact.html">Contact</a>
+        <a href="#top" id="back-to-top" class="back-to-top" aria-label="Scroll back to top">↑ Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Interactivity Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
