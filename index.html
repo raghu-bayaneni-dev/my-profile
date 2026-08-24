@@ -30,8 +30,11 @@
   <header class="site-header" id="site-header">
     <div class="container header-container">
       <a href="index.html" class="brand-logo" aria-label="Raghu Bayaneni Home">
-        <span class="brand-badge" aria-hidden="true"></span>
+        <div class="nav-avatar-frame">
+          <img src="resources/profile.jpeg" alt="Raghu" class="nav-avatar-img" width="36" height="36" loading="eager">
+        </div>
         <span>Raghu Bayaneni</span>
+        <span class="brand-badge" aria-hidden="true"></span>
       </a>
 
       <!-- Mobile Navigation Hamburger Button -->
@@ -95,8 +98,16 @@
         <!-- Hero Aside / Profile Quick Facts -->
         <div class="hero-aside">
           <div class="hero-card">
-            <div class="hero-avatar-box" aria-hidden="true">
-              🤖
+            <div class="hero-avatar-wrapper">
+              <div class="hero-avatar-glow" aria-hidden="true"></div>
+              <div class="hero-avatar-card">
+                <img src="resources/profile.jpeg" 
+                     alt="Raghu Bayaneni - Lead Staff Engineer &amp; AI Architect" 
+                     class="hero-avatar-img" 
+                     width="200" 
+                     height="200" 
+                     loading="eager" />
+              </div>
             </div>
             <h3>Raghu Bayaneni</h3>
             <p class="text-muted" style="font-size: var(--text-sm); margin-bottom: 0.5rem;">Lead Staff Engineer &amp; AI Architect</p>
@@ -104,7 +115,7 @@
               Salesforce AI Agentblazer Champion specializing in Agentforce, enterprise RAG, and scalable cloud platforms.
             </p>
 
-            <div class="hero-meta-list">
+            <div class="hero-meta-list" style="width: 100%; text-align: left;">
               <div class="hero-meta-item">
                 <span class="hero-meta-icon" aria-hidden="true">📍</span>
                 <span>San Francisco - Bay Area, CA</span>

@@ -29,8 +29,11 @@
   <header class="site-header" id="site-header">
     <div class="container header-container">
       <a href="index.html" class="brand-logo" aria-label="Raghu Bayaneni Home">
-        <span class="brand-badge" aria-hidden="true"></span>
+        <div class="nav-avatar-frame">
+          <img src="resources/profile.jpeg" alt="Raghu" class="nav-avatar-img" width="36" height="36" loading="eager">
+        </div>
         <span>Raghu Bayaneni</span>
+        <span class="brand-badge" aria-hidden="true"></span>
       </a>
 
       <!-- Mobile Navigation Hamburger Button -->
@@ -57,13 +60,24 @@
   <main id="main-content" class="page-content">
     <div class="container">
       
-      <!-- Section Header -->
-      <header class="section-header">
+      <!-- Section Header with Portrait -->
+      <div class="contact-profile-header">
+        <div class="contact-avatar-wrapper">
+          <div class="contact-avatar-glow" aria-hidden="true"></div>
+          <div class="contact-avatar-card">
+            <img src="resources/profile.jpeg" 
+                 alt="Raghu Bayaneni - Contact Portrait" 
+                 class="contact-avatar-img" 
+                 width="140" 
+                 height="140" 
+                 loading="lazy" />
+          </div>
+        </div>
         <h1 class="section-title">Get in Touch &amp; Connect</h1>
-        <p class="section-subtitle">
+        <p class="section-subtitle" style="max-width: 680px; margin: 0 auto;">
           Whether you are looking for executive technical leadership in Generative AI, enterprise agentic systems architecture, or forward-deployed collaborations, reach out directly through any channel below.
         </p>
-      </header>
+      </div>
 
       <!-- Section Body: Contact Cards Grid -->
       <div class="section-body">
