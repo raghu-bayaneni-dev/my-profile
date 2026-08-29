@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+  ==============================================================================
+  My Profile Site - Page Not Found (404.html)
+  ==============================================================================
+  Purpose:
+    Branded fallback error page for GitHub Pages when a visitor accesses
+    an invalid or non-existent URL route. Seamlessly provides navigation
+    back to the homepage and main portfolio sections.
+
+  Constitution Compliance:
+    - Principle I: Clean, readable, well-documented semantic markup.
+    - Principle II: Pure static HTML5, CSS3, and Vanilla JS.
+    - Principle III: Modern, responsive light theme layout.
+    - Principle IV: Zero automated test overhead; manual verification only.
+  ==============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found (404) | Raghu Bayaneni - Lead Staff Engineer</title>
+  <meta name="description" content="The requested page could not be found on Raghu Bayaneni's profile and portfolio site.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Persistent Site Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Raghu Bayaneni Home">
+        <div class="nav-avatar-frame">
+          <img src="resources/profile.jpeg" alt="Raghu" class="nav-avatar-img" width="36" height="36" loading="eager">
+        </div>
+        <span>Raghu Bayaneni</span>
+        <span class="brand-badge" aria-hidden="true"></span>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Main Navigation Links -->
+      <nav class="site-nav" id="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">About</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Page Content -->
+  <main id="main-content" class="page-content">
+    <div class="container">
+      
+      <div style="max-width: 680px; margin: 4rem auto; text-align: center; padding: 2.5rem 1.5rem;" class="card">
+        <div style="font-size: 4rem; line-height: 1; margin-bottom: 1rem;" aria-hidden="true">🧭</div>
+        
+        <h1 class="section-title" style="font-size: 2.5rem; margin-bottom: 0.75rem;">404 - Page Not Found</h1>
+        
+        <p class="section-subtitle" style="margin-bottom: 2rem;">
+          The page you are looking for doesn't exist, was moved, or had its URL updated.
+        </p>
+
+        <div class="btn-group" style="justify-content: center;">
+          <a href="index.html" class="btn btn-primary">
+            🏠 Return to Homepage &rarr;
+          </a>
+          <a href="experience.html" class="btn btn-secondary">
+            Career Experience
+          </a>
+          <a href="contact.html" class="btn btn-secondary">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Consistent Site Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <p class="copyright">&copy; 2026 Raghu Bayaneni. All rights reserved.</p>
+        <p class="footer-tagline">Lead Staff Engineer | Full-Stack, AI &amp; Forward Deployed Systems.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/raghuramz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+        <a href="resources/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download Resume PDF">Resume (PDF)</a>
+        <a href="contact.html">Contact</a>
+        <a href="#top" id="back-to-top" class="back-to-top" aria-label="Scroll back to top">↑ Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Interactivity Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

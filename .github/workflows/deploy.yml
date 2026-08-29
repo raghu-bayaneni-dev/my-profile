@@ -1,0 +1,54 @@
+# ==============================================================================
+# GitHub Actions Workflow: Deploy Static Site to GitHub Pages
+# ==============================================================================
+# Purpose:
+#   Automatically packages and deploys the static profile site to GitHub Pages
+#   upon pushes to the main branch or manual workflow dispatch.
+#
+# Constitution Compliance:
+#   - Principle II: Pure static foundation with zero server runtime.
+#   - Principle V: Minimal dependencies & simple direct static upload.
+# ==============================================================================
+
+name: Deploy static content to Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we are hosting pure static files
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Static Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository root (excluding items in .gitignore)
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
