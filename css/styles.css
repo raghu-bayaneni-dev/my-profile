@@ -880,6 +880,17 @@ button {
   transform: translateY(-1px);
 }
 
+.skill-icon {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .skill-dot {
   width: 6px;
   height: 6px;
@@ -1189,6 +1200,16 @@ button {
 
   .card {
     padding: 1.25rem;
+  }
+
+  .skill-items-grid {
+    grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .skill-badge {
+    padding: 0.4rem 0.6rem;
+    font-size: var(--text-xs);
   }
 
   .btn-group {
